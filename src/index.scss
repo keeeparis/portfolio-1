@@ -1,0 +1,130 @@
+@import 'config';
+@import '../src/media/style.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Adobe Garamond Pro Regular';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.App {
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 30px;
+
+    img {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .image {
+        margin: 0 20px 30px 20px;
+        width: calc(100vw - 40px);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* JOIN PAGE */
+
+.Join {
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .inner {
+        padding: 30px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.welcome-helper {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin: 20px 0 35px;
+}
+
+.welcome-footer {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .09em;
+    margin-top: 40px;
+}
+
+.welcome-form {
+    form {      
+
+        input, button {
+            padding: 12px;
+            line-height: 1.9;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        input {
+            border: 1px solid $BLACK15OPACITY;
+            min-width: 230px;
+            margin-right: 15px;
+            font-weight: 500;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        button {
+            min-width: 110px;
+            border: none;
+            background-color: transparent;
+            box-shadow: inset 0 0 3px 1px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            line-height: 2;
+
+            &:hover {
+                color: white;
+                background-color: black;
+                box-shadow: 0 0 0 1px;
+            }
+        }
+    }
+}

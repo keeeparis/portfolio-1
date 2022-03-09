@@ -1,0 +1,28 @@
+@import '../config';
+
+.social {
+    display: flex;
+    gap: 20px;
+    
+    &:hover {
+        a { 
+            color: $BLACK30OPACITY;
+            transition-duration: 0.2s;
+        }
+        svg { 
+            fill: currentColor 
+        }
+    }
+
+    .media {
+        transform: scale(1.5);
+        
+        a:hover {
+            color: black;
+
+            svg {
+                fill: currentColor
+            }
+        }
+    }
+}
