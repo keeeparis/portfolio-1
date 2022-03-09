@@ -1,11 +1,8 @@
 #!/usr/bin/env sh
 
-# ignore errors
 set -e
 
-# delete dist folder
 rm -d dist
-
 npm run build
 
 cd dist
