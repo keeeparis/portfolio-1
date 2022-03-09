@@ -7,9 +7,13 @@ import {
     Routes 
 } from 'react-router-dom'
 
-const App = lazy(() => import('./App'))
-const Join = lazy(() => import('./pages/Join'))
-const Redirect = lazy(() => import('./pages/Redirect'))
+import App from './App'
+import Join from './pages/Join'
+import Redirect from './pages/Redirect'
+
+// const App = lazy(() => import('./App'))
+// const Join = lazy(() => import('./pages/Join'))
+// const Redirect = lazy(() => import('./pages/Redirect'))
 
 ReactDOM.render(
     <React.StrictMode>
