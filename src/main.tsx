@@ -7,18 +7,14 @@ import {
     Routes 
 } from 'react-router-dom'
 
-import App from './App'
-import Join from './pages/Join'
-import Redirect from './pages/Redirect'
-
-// const App = lazy(() => import('./App'))
-// const Join = lazy(() => import('./pages/Join'))
-// const Redirect = lazy(() => import('./pages/Redirect'))
+const App = lazy(() => import('./App'))
+const Join = lazy(() => import('./pages/Join'))
+const Redirect = lazy(() => import('./pages/Redirect'))
 
 ReactDOM.render(
     <React.StrictMode>
         <Suspense fallback={<div>Loading...</div>}>
-            <Router>
+            <Router basename={import.meta.env.VITE_DOMAIN}>
                 <Routes>
                     <Route path='/' element={<App />}></Route>
                     <Route path='/join' element={<Join />}></Route>

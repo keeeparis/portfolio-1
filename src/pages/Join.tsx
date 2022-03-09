@@ -11,7 +11,7 @@ const Join = () => {
                     </div>
 
                     <div className='welcome-form'>
-                        <form action="/" method='GET'>
+                        <form action={import.meta.env.VITE_DOMAIN} method='GET'>
                             <input 
                                 type="email" 
                                 name="email" 
