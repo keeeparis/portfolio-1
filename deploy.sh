@@ -2,7 +2,7 @@
 
 set -e
 
-rm -d dist
+# rm -d dist
 npm run build
 
 cd dist
