@@ -1,0 +1,1 @@
+import{r}from"./vendor.58f09d7d.js";import{a as t,F as a}from"./index.6560a8bf.js";const i=({link:e})=>(r.exports.useEffect(()=>{window.location.replace(e)}),t(a,{children:"Redirecting..."}));export{i as default};
